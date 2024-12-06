@@ -6,13 +6,12 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #316B34;
-  --secondary-color: #481D0F;
-  --accent1-color: #9df375;
-  --accent2-color: #F7E9CF;
-  --accent3-color: #D9F4F3;
+  --primary-color: #4a5292;
+  --secondary-color: #af6c6c;
+  --accent1-color: #1a2796;
+  --accent2-color: #a70b0b;
+  --accent3-color: white;
   --accent4-color: black;
-  --accent5-color: #B4091E;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Baskerville", Verdana, "Garamond";
