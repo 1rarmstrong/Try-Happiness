@@ -174,3 +174,17 @@ footer {
 .god h2 {
     color: var(--accent2-color);
 }
+
+/* God Page */
+
+.god-grid img {
+    width: 100%;
+}
+
+.god-grid h1 {
+    text-align: center;
+}
+
+.god-grid p {
+    margin-left: 5%;
+}
