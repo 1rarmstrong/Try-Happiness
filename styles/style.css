@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Neuton&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #1a2796;
+  --secondary-color:#a70b0b;
+  --accent1-color: #ffffff;
+  --accent2-color: #000000;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Baskerville", Verdana, "Garamond";
+  --paragraph-font: "Lato", "Nunito Sans", "Neuton";
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(--primary-color);  /* headlines on a white background */ 
+  --headline-color-on-color: var(--accent1-color); /* headlines on a colored background */ 
+  --paragraph-color-on-white: var(--accent2-color); /* paragraph text on a white background */ 
+  --paragraph-color-on-color: var(--accent1-color); /* paragraph text on a colored background */ 
+  --paragraph-background-color: var(--secondary-color);
+  --nav-link-color: var(--accent1-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: var(--accent1-color);
+  --nav-hover-background-color: var(--primary-color);
+}
+
+body {
+    font-family: var(--paragraph-font);
+    font-size: 2em;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+#logo {
+    width: 150px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5em;
+}
+nav a, footer a {
+    color: var(--accent1-color);
+    padding: 35px;
+    text-decoration: none;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hg {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.hg-hero {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    font-size: 3.5em;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+section {
+    padding: 2%;
+}
+
+.paul, .christ {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.paul img {
+    width: 100%;
+    grid-row: 1/3;
+}
+
+.paul h2 {
+    padding: 5%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.paul p {
+    padding: 5%;
+}
+
+.paul p:nth-of-type(1) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 150px;
+}
+
+.christ h2, .christ p {
+    padding: 5%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.christ p {
+    margin-top: 150px;
+}
+
+.christ img {
+    width: 100%;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.social img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 2%;
+}
